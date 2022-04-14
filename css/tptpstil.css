@@ -1,0 +1,702 @@
+/*---------------------------------------------------------CSS od start.html stranice-----------------------------------------------------------*/
+
+.st * {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.st body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.banner-area{
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/start/back-image2.png);
+  background-size: cover;
+}
+
+.intro-area{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  font-family: logoFont;
+}
+
+.intro{
+  animation: transitionIn 1.5s;
+  text-align: center;
+}
+
+.intro h1{
+  font-size: 80px;
+  color: #f2f2f2;
+}
+
+.intro p{
+  font-size: 30px;
+  color: #f2f2f2;
+}
+
+.box{
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-20px, -20px);
+  cursor: pointer;
+}
+
+.box span{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2){
+  animation-delay: 250ms;
+}
+
+.box span:nth-child(3){
+  animation-delay: 450ms;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0 ;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+.meni {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  background-color: #101013;
+  border-bottom-style: groove;
+  border-bottom-color: #f2f2f2;
+  border-bottom-width: 1px ;
+}
+
+.meni a {
+  text-align: center;
+  float: none;
+  display: inline-block;
+  color: #f2f2f2;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.meni a:hover {
+  background-color: #C0B7B1;
+  color: #433E3F;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.meni .active{
+  background-color: rgba(255,255,255,0.65);
+  color: #433E3F;
+}
+
+@font-face {
+  font-family: logoFont;
+  src:url("AlexBrush.ttf");
+}
+
+@keyframes transitionIn{
+  from{
+    margin-top: 75px;
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to{
+    margin-top: 0;
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.leftnav{
+  float: left;
+  padding: 20px;
+  width: 20%;
+  height: 200vh;
+  background-color: #101013;
+}
+
+.leftnav h1{
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.azurContainer{
+  margin-top: 20px;
+  margin-left: 20%;
+  position: relative;
+  width: 50%;
+}
+
+.adelContainer{
+  margin-top: 20px;
+  margin-left: 20%;
+  position: relative;
+  width: 50%;
+}
+
+.sakibContainer{
+  margin-top: 20px;
+  margin-left: 20%;
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.leftnav h2{
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.centerContent {
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  width: 58%;
+  height: 200vh;
+  background-image: linear-gradient(to right, #101013 , #343a40);
+}
+
+.centerContent h1{
+  margin-bottom: 10px;
+  color: white;
+}
+.centerContent p{
+  margin-bottom: 20px;
+  color: white;
+}
+
+.imgContainer1{
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 150px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.imgContainer2{
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 160px;
+  margin-top: 50px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.imgContainer3{
+  position: relative;
+  margin-left: 35%;
+  width: 300px;
+  height: 265px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.imgContainer4{
+  position: relative;
+  float: right;
+  width: 350px;
+  height: 250px;
+  margin-left: 40px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.overlayStart{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.more{
+  color: white;
+  font-size: 13px;
+}
+
+.imgContainer1:hover .picture{
+  opacity: 0.3;
+}
+
+.imgContainer1:hover .overlayStart{
+  opacity: 1;
+}
+
+.imgContainer2:hover .picture{
+  opacity: 0.3;
+}
+
+.imgContainer2:hover .overlayStart{
+  opacity: 1;
+}
+
+.imgContainer3:hover .picture{
+  opacity: 0.3;
+}
+
+.imgContainer3:hover .overlayStart{
+  opacity: 1;
+}
+
+.imgContainer4:hover .picture{
+  opacity: 0.3;
+}
+
+.imgContainer4:hover .overlayStart{
+  opacity: 1;
+}
+
+.picture{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: .5s ease;
+}
+
+.rightnav{
+  float: left;
+  width: 22%;
+  height: 200vh;
+  background-image: linear-gradient(to right, #343a40, #495057);
+}
+
+.rightnav h1{
+  text-decoration: underline;
+  font-size: 50px;
+  color:antiquewhite;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.st iframe{
+  margin-top: 25px;
+  margin-left: 20px
+}
+
+.partners{
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.partners img{
+  width: 95%;
+}
+
+.partners p{
+  text-align: center;
+  width: 95%;
+  color: white;
+  font-size: small;
+}
+
+.partners a:visited{
+  color:bisque;
+}
+
+.partners a:hover{
+  color: #977754;
+}
+
+.footer{
+  background-image: linear-gradient(to right, #101013, #495057);
+  color: rgba(255, 255, 255, 0.5);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.design{
+  float: left;
+  padding: 10px;
+  text-align: center;
+  width: 95%;
+  height: 100%;
+  background-color: #101013;
+}
+
+.icons{
+  float: left;
+  width: 5%;
+  height: 6.2vh;
+  text-align: center;
+  padding-top: 5px;
+  background-color: #101013;
+}
+
+.st li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+.st li a:visited{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*---------------------------------------------------------CSS od proizvodi.html stranice-----------------------------------------------------------*/
+
+.prod body
+{
+  background: linear-gradient(to right, #101013, #495057);
+  margin: 1px;
+  color: #433E3F;
+}
+
+.center{
+  text-align: center;
+}
+
+.middle *{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 50px;
+}
+
+/* ▼ ▼ ▼ lista stvari koje prodajemo ▼ ▼ ▼ */
+
+.middle{
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+.menuu{
+  width: 800px;
+  overflow: hidden;
+}
+
+.item{
+  border-top: 1px solid white;
+  padding-bottom: 20px;
+  border-radius: 8px;
+}
+
+.btn{
+  display: block;
+  padding: 3px 3px;
+  background: rgba(120,120,120,0.6);
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(105, 105, 105, 0.5);
+  cursor: pointer;
+}
+
+.btn i{
+  margin-right: 30px;
+  margin-left: 3px;
+  z-index: 0;
+}
+
+.btn p{
+  opacity: 0%;
+}
+
+.btn:hover p{
+  text-align: center;
+  padding-top: 45px;
+  font-size: 18px;
+  opacity: 65%;
+  transition: opacity 0.2s linear;
+  font-weight: 450;
+}
+
+.smenu{
+  border-radius: 8px;
+  background: rgba(255,255,255,0.75);
+  overflow: hidden;
+  transition: max-height 0.5s;
+  max-height: 0;
+}
+
+.smenu a{
+  display: block;
+  padding: 8px 10px;
+  color: black;
+  font-size: 25px;
+  margin: 0px 0px;
+  text-decoration: none;
+  position: relative;
+}
+
+.item:target .smenu{
+  max-height: 10em;
+}
+
+th{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.itemTable th:nth-child(odd){
+  width: 110px;
+  min-width: 110px;
+  border-radius: 10px;
+  height: 110px;
+  background: rgba(0,0,0,0.175);
+  text-align: center;
+  vertical-align: middle;
+  font-size: 26px;
+  padding: 2px 2px 2px 2px;
+  color: white;
+}
+
+.itemTable th:nth-child(even){
+  width: 680px;
+  height: 110px;
+  font-size: 30px;
+  text-align: left;
+  vertical-align: top;
+  padding-left: 8px;
+  padding-top: 6px;
+  color: white;
+}
+
+.itemTable img{
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+/* dalje ide popup*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 150px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  width: 500px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.popup .close {
+  position: absolute;
+  top: 6px;
+  right: 13px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: gray;
+}
+
+/*---------------------------------------------------------CSS od kontakt.html stranice-----------------------------------------------------------*/
+
+.cont{
+  background: linear-gradient(to right, #101013, #495057);
+  background-image:url('../images/kontakt/pozadina.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#content{
+	color: white;
+	font-family: Montserrat;
+	font-size: 20px;
+	padding-top:55px;
+	word-spacing:1px;
+}
+#content p{
+	width:70%;
+  margin: auto;
+  text-align: justify;
+	padding-bottom: 50px;
+	font-weight: bold;
+}
+#content h2{
+	text-align: center;
+}
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 0 1.5rem;
+  background: rgba(120,120,120,0.65);
+  border-top: 1px solid white;
+}
+.my-form h1 {
+  /*margin-bottom: 1.5rem;*/
+  text-align:center;
+  color: #c0b7b1;
+}
+.my-form li,
+.my-form .grid > *:not(:last-child) {
+  margin-bottom: 1.15rem;
+}
+.my-form select,
+.my-form input,
+.my-form textarea,
+.my-form button {
+  width: 100%;
+  line-height: 1.5;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  background: rgba(0,0,0,0.9 );
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+    transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.my-form textarea {
+  height: 130px;
+  max-width: 100%;
+  min-width: 100%;
+}
+.my-form ::placeholder {
+  color: rgba(255,255,255,0.5);
+  opacity: 1;
+}
+.my-form ul{
+	list-style-type: none;
+}
+.container .left{
+	display: inline-block;
+	width:40%;
+	border-right: 1px solid white;
+	height: auto;
+	max-width: 28vw;
+	word-wrap: break-word;
+}
+.container .right{
+	float: right;
+	padding-right: 5vw;
+	vertical-align: top;
+	display:inline-block;
+  height: auto;
+	width: 50%;
+}
+table{
+	color:#c0b7b1;
+}
+.left ul{
+	padding-top: 10%;
+}
+.left li{
+	padding-bottom:50px;
+	display:inline;
+
+}
+.desni{
+	padding-bottom:100px;
+	padding-left:100px;
+}
+.desni br{
+	padding-left:100px;
+}
+.my-form tr{
+	padding-bottom: 10px;
+}
+.align{
+	text-align: left;
+	padding-left: 20px;
+}
+.align2{
+	text-align: center;
+	padding-left:20px;
+}
+.left ul{
+	list-style-type: none;
+	font-weight: bold;
+}
+.left li a{
+	color: white;
+}
+
+.btn-grid {
+  cursor: pointer;
+}

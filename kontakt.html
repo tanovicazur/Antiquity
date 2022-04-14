@@ -1,0 +1,96 @@
+<html class="cont">
+<head>
+<script src="js/obrazac.js"></script>
+<link rel="stylesheet" type="text/css" href="css/tptpstil.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antiquity - Contact</title>
+
+<body onload="jen();">
+
+  <div class="meni">
+    <a href="start.html">Antiquity</a>
+    <a href="proizvodi.html">Products</a>
+    <a href="kontakt.html" class="active">Contact</a>
+  </div>
+
+<div id="content">
+
+<h2>Contact us</h2>
+<p>
+Antiquity is an antique shop in the city of Tuzla. We have a long line of experience in dealing with collecting, buying and selling antiques on auctions and fairs,
+not only in Bosnia and Herzegovina but throught the entirety of Europe. We offer a wide range of antiques all the way from neat pocket watches to historical pieces which could
+fit into a museum from periods as old as 18th century. Come visit us and take a look for yourself or browse through our vast catalogue on our web page.
+</p>
+  <div class="container">
+  <div class="left">
+  <h1>Contact information:</h1>
+  <table style="color: white;">
+  <tr>
+  <td><img src="images/kontakt/phone.png"></td>
+  <td class="align"><b>Telephone:</b> +387 61 061 061</td>
+  </tr>
+  <tr>
+  <td><img src="images/kontakt/email.png"></td>
+  <td class="align"><b>Email:</b> antiquity@gmail.com</td>
+  </tr>
+  <tr>
+  <td><img src="images/kontakt/loc.png"></td>
+  <td class="align2"><b>Location:</b> Franjevačka 2, Tuzla 75 000</td>
+  </tr>
+  </table>
+  <div class="mapouter" style="padding-top:50px;margin: auto;"><div class="gmap_canvas">
+  <iframe width="450" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Fakultet%20elektrotehnike&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+  </iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:450px;}</style>
+  <a href="https://www.embedgooglemap.net">google embed code</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:450px;max-width: 27vw;}</style></div></div>
+  <ul><li>Follow us on: <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://www.twitter.com" target="_blank">Twitter</a></li></ul>
+  </div>
+  <div class="right">
+    <form class="my-form" id="forma" onsubmit="return valid();">
+    <h1>Get in touch!</h1>
+    <ul>
+      <li>
+        <div id="error_message"></div>
+      </li>
+      <li>
+        <div class="grid grid-2">
+          <input type="text" placeholder="Full name" id="ime">
+          <input type="email" placeholder="Email" id="email">
+          <input type="tel" placeholder="Telephone" id="broj">
+        </div>
+      </li>
+      <li>
+        <textarea placeholder="Message" id="poruka"></textarea>
+      </li>
+      <li>
+        <div class="grid grid-3">
+          <button class="btn-grid" type="submit" enabled>
+            <span class="back">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+            </span>
+            <span class="front">SUBMIT</span>
+          </button>
+          <button class="btn-grid" type="reset" enabled>
+            <span class="back">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+            </span>
+            <span class="front">RESET</span>
+          </button>
+        </div>
+      </li>
+    </ul>
+    </form>
+	</div>
+  </div>
+</div>
+
+<div id="sentPopup" class="overlay">
+  <div class="popup">
+		<p class="center"><h2>Email sent !</h2></p>
+		<a class="close" href="#">&times;</a>
+	</div>
+
+</body>
+</html>
